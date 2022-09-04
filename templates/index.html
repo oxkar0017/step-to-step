@@ -6,175 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Step to step</title>
 </head>
-<body>
-    <header>
-        <h1>Paso a paso</h1>
+    <body>
+        <header>
+            <h1>Paso a paso</h1>
 
-        <p>Paso a paso para realizar instalación, creación de proyecto en git heroku y comando para despliegue en el mismo de un html a través de Flask.</p>
-    </header>
+            <p>Paso a paso para realizar instalación, creación de proyecto en git heroku y comando para despliegue en el mismo de un html a través de Flask.</p>
+        </header>
 
-    <main>
-        <article>
-            <h2>Primeros pasos Heroku</h2>
+        <main>
+            <article>
+                <h2>Primeros pasos Heroku</h2>
 
-            <h3>Instalación</h3>
-            <p>Guía de instalación <a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">Heroku CLI</a>.</p>
+                <h3>Instalación</h3>
+                <p>Guía de instalación <a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">Heroku CLI</a>.</p>
 
-            <h3>Iniciar con la CLI de Heroku</h3>
-            <p>Se debe escribir el siguiente comando:
-            <pre>&gt;&gt; heroku login</pre>
-            Luego se habre una página de internet y debe continuar con el inicio de sesión.</p>
+                <h3>Iniciar con la CLI de Heroku</h3>
+                <p>Se debe escribir el siguiente comando:
+                <pre>&gt;&gt; heroku login</pre>
+                Luego se habre una página de internet y debe continuar con el inicio de sesión.</p>
 
-            <h3>Crear un nuevo app</h3>
-            <p>Una vez iniciada la sesión en Heroku, se debe dar clik en New/Create new app.</p>
-            <img class="fit-picture"
-                src="static/assets/img/heroku_crear_nuevo_app.PNG"
-                alt="Crear nueva app en Heroku"
-                height="200px"/>
-            <p>Después le da un nombre a la app y la crea.</p>
+                <h3>Crear un nuevo app</h3>
+                <p>Una vez iniciada la sesión en Heroku, se debe dar clik en New/Create new app.</p>
+                <img class="fit-picture"
+                    src="static/assets/img/heroku_crear_nuevo_app.PNG"
+                    alt="Crear nueva app en Heroku"
+                    height="200px"/>
+                <p>Después le da un nombre a la app y la crea.</p>
 
-            <h3>Crear un nuevo repositorio Git en tu computador local</h3>
-            <p>Desde tu computador crea una carpeta que contendra tu proyecto
-            <pre>&gt;&gt; cd mi_proyecto/</pre>
-            Luego crea un repositorio Git de tu projecto con el comando
-            <pre>&gt;&gt; git init</pre>
-            </p>
+                <h3>Crear un nuevo repositorio Git en tu computador local</h3>
+                <p>Desde tu computador crea una carpeta que contendra tu proyecto
+                <pre>&gt;&gt; cd mi_proyecto/</pre>
+                Luego crea un repositorio Git de tu projecto con el comando
+                <pre>&gt;&gt; git init</pre>
+                </p>
 
-            <h3>Para registrar cambios en tu repositorio Git desde tu computador local</h3>
-            <p>En caso de que ya tengas un proyecto en un repositorio Git los pasos anteriores <b>no son necesarios.</b></p>
-            <p>En caso de no conocer comandos git para añadir cambios en tu repositorio local (git add) y la captura de instantáneas de tales cambios (git commit), asumiendo que tienes un archivo .gitignore adecuado, puedes ejecutar los siguiente comandos para registrar cambios en tu Git local
-            <pre>&gt;&gt; git add .</pre>
-            <pre>&gt;&gt; git commit -am "cambio nuevo en mi projecto"</pre>
-            </p>
+                <h3>Para registrar cambios en tu repositorio Git desde tu computador local</h3>
+                <p>En caso de que ya tengas un proyecto en un repositorio Git los pasos anteriores <b>no son necesarios.</b></p>
+                <p>En caso de no conocer comandos git para añadir cambios en tu repositorio local (git add) y la captura de instantáneas de tales cambios (git commit), asumiendo que tienes un archivo .gitignore adecuado, puedes ejecutar los siguiente comandos para registrar cambios en tu Git local
+                <pre>&gt;&gt; git add .</pre>
+                <pre>&gt;&gt; git commit -am "cambio nuevo en mi projecto"</pre>
+                </p>
 
-            <h3>Para desplegar tu aplicación en Git Heroku</h3>
-            <p>Una vez completado el paso anterior, para realizar el despliegue de tu aplicación, usa el siguiente comando
-            <pre>&gt;&gt; git push heroku main</pre>
-            </p>
-        </article>
-        
-        <article>
-            <h2>Mi primer app en flask</h2>
+                <h3>Para desplegar tu aplicación en Git Heroku</h3>
+                <p>Una vez completado el paso anterior, para realizar el despliegue de tu aplicación, usa el siguiente comando
+                <pre>&gt;&gt; git push heroku main</pre>
+                </p>
+            </article>
+            
+            <article>
+                <h2>Mi primer app en flask</h2>
 
-            <h3>Creación de archivos necesarios para la app</h3>
-            <p>
-                <ol>
-                    <li>Creamos una carpeta proyecto que contendrá la app llamada por ejemplo mi_app/</li>
-                    <li>Creamos un archivo llamado .gitignore</li>
-                    <li>Creamos un archivo llamado requirements.txt</li>
-                    <li>Creamos un archivo llamado runtime.txt</li>
-                    <li>Creamos un archivo llamado app.py</li>
-                    <li>Creamos un archivo llamado wsgi.py</li>
-                    <li>Creamos una carpeta llamada templates/</li>
-                    <li>Dentro de templates/, creamos un archivo llamado index.html</li>
-                </ol>
-            </p>
+                <h3>Creación de archivos necesarios para la app</h3>
+                <p>
+                    <ol>
+                        <li>Creamos una carpeta proyecto que contendrá la app llamada por ejemplo mi_app/</li>
+                        <li>Creamos un archivo llamado .gitignore</li>
+                        <li>Creamos un archivo llamado requirements.txt</li>
+                        <li>Creamos un archivo llamado runtime.txt</li>
+                        <li>Creamos un archivo llamado app.py</li>
+                        <li>Creamos un archivo llamado wsgi.py</li>
+                        <li>Creamos una carpeta llamada templates/</li>
+                        <li>Dentro de templates/, creamos un archivo llamado index.html</li>
+                    </ol>
+                </p>
 
-            <h3>Creación de entorno virtual Python para la app</h3>
-            <p>Asumiendo que ya está instalado Python de la versión al menos 3.10.6 se siguen los siguientes pasos dentro de la carpeta mi_app/</p>
-            <p>
-                <ol>
-                    <li>
-                        Se crea entorno virtual de Python
-                        <pre>&gt;&gt; python -m venv venv</pre>
-                    </li> 
-                    <li>
-                        Activamos python dentro del entorno virtual
-                        <pre>&gt;&gt; venv\scripts\activate.ps1</pre>
-                    </li>
-                    <li>
-                        Instalamos flask
-                        <pre>(venv)&gt;&gt; python -m pip install flask</pre>
-                    </li>
-                    <li>
-                        Instalamos gunicorn
-                        <pre>(venv)&gt;&gt; python -m pip install gunicorn</pre>
-                    </li>
-                </ol>
-            </p>
-            <p>A partir de este momento se asume que la terminal donde se ejecutará la app está utilizando Python que está dentro del entorno virtual. Para confirmarlo, la terminal debe mostrar como prefijo en cada comando la palabra (venv) automátiacmente.</p>
+                <h3>Creación de entorno virtual Python para la app</h3>
+                <p>Asumiendo que ya está instalado Python de la versión al menos 3.10.6 se siguen los siguientes pasos dentro de la carpeta mi_app/</p>
+                <p>
+                    <ol>
+                        <li>
+                            Se crea entorno virtual de Python
+                            <pre>&gt;&gt; python -m venv venv</pre>
+                        </li> 
+                        <li>
+                            Activamos python dentro del entorno virtual
+                            <pre>&gt;&gt; venv\scripts\activate.ps1</pre>
+                        </li>
+                        <li>
+                            Instalamos flask
+                            <pre>(venv)&gt;&gt; python -m pip install flask</pre>
+                        </li>
+                        <li>
+                            Instalamos gunicorn
+                            <pre>(venv)&gt;&gt; python -m pip install gunicorn</pre>
+                        </li>
+                    </ol>
+                </p>
+                <p>A partir de este momento se asume que la terminal donde se ejecutará la app está utilizando Python que está dentro del entorno virtual. Para confirmarlo, la terminal debe mostrar como prefijo en cada comando la palabra (venv) automátiacmente.</p>
 
-            <h3>Contenido del archivo .gitignore</h3>
-            <p>El archivo .gitignore debe contener lo siguiente:
-            <pre>venv/*</pre></p>
+                <h3>Contenido del archivo .gitignore</h3>
+                <p>El archivo .gitignore debe contener lo siguiente:
+                <pre>venv/*</pre></p>
 
-            <h3>Contenido del archivo requirements.txt</h3>
-            <p>Una vez creado el entorno de Python con los pasos anteriores, incluyendo la instalación de las bibliotecas flask y gunicorn, se crea el archivo o se llena requirements.txt con el siguiente comando:
-            <pre>(venv)&gt;&gt; python -m pip freeze &gt; requirements.txt</pre></p>
+                <h3>Contenido del archivo requirements.txt</h3>
+                <p>Una vez creado el entorno de Python con los pasos anteriores, incluyendo la instalación de las bibliotecas flask y gunicorn, se crea el archivo o se llena requirements.txt con el siguiente comando:
+                <pre>(venv)&gt;&gt; python -m pip freeze &gt; requirements.txt</pre></p>
 
-            <h3>Contenido del archivo runtime.txt</h3>
-            <p>
-                El archivo runtime.txt debe contener lo siguiente:
-                <pre>python-3.10.6</pre>
-                O una versión superior.
-            </p>
+                <h3>Contenido del archivo runtime.txt</h3>
+                <p>
+                    El archivo runtime.txt debe contener lo siguiente:
+                    <pre>python-3.10.6</pre>
+                    O una versión superior.
+                </p>
 
-            <h3>Contenido del archivo app.py</h3>
-            <p>
-                El archivo app.py debe contener lo siguiente:
-                <pre>
-                    import os
+                <h3>Contenido del archivo app.py</h3>
+                <p>
+                    El archivo app.py debe contener lo siguiente:
+                    <pre>
+                        import os
 
-                    from flask import Flask
-                    from flask import render_template
-                    
-                    
-                    app = Flask(__name__)
-                    
-                    @app.route('/')
-                    def index():
-                        return render_template('index.html')
-                </pre>
-            </p>
+                        from flask import Flask
+                        from flask import render_template
+                        
+                        
+                        app = Flask(__name__)
+                        
+                        @app.route('/')
+                        def index():
+                            return render_template('index.html')
+                    </pre>
+                </p>
 
-            <h3>Contenido del archivo wsgi.py</h3>
-            <p>
-                El archivo wsgi.py debe contener lo siguiente:
-                <pre>
-                    from app import app
+                <h3>Contenido del archivo wsgi.py</h3>
+                <p>
+                    El archivo wsgi.py debe contener lo siguiente:
+                    <pre>
+                        from app import app
 
 
-                    if __name__ == '__main__':
-                        app.run()
-                </pre>
-            </p>
+                        if __name__ == '__main__':
+                            app.run()
+                    </pre>
+                </p>
 
-            <h3>Contenido del archivo templates/index.html</h3>
-            <p>
-                El archivo templates/index.html debe contener lo siguiente:
-                <pre><code>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html lang="en"&gt;
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;title&gt;Step to step&lt;/title&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                        &lt;header&gt;
-                            &lt;h1&gt;Hola mundo!&lt;/h1&gt;
-                        &lt;/header&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt;
-                </code></pre>
-            </p>
+                <h3>Contenido del archivo templates/index.html</h3>
+                <p>
+                    El archivo templates/index.html debe contener lo siguiente:
+                    <pre><code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Step to step&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;header&gt;
+                                &lt;h1&gt;Hola mundo!&lt;/h1&gt;
+                            &lt;/header&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+                </p>
 
-            <h3>Correr en local tu app</h3>
-            <p>
-                Para correr en tu computador local la app, ejecuta el siguiente comando:
-                <pre>(venv)&gt;&gt; flask run</pre>
-                Como resultado te debería aparecer un gran Hola mundo!
-            </p>
-        </article>
-        
-        <article>
-            <h2>Despliegue de mi app en Heroku</h2>
-            <p>Ya creada la app con lo anterior, para realizar el despliegue en Heroku, se debe realizar cada uno de los pasos que se encuentran en el artículo Primeros pasos Heroku. Una vez se aplica el comando
-            <pre>&gt;&gt; git push heroku main</pre>
-            En la misma terminal de comandos Heroku te entrega una dirección de internet donde se encontrará tu app desplegada y ¡podrás acceder a ella desde cualquier otro computador con internet!
-            </p>
-        </article>
-    </main>
-</body>
+                <h3>Correr en local tu app</h3>
+                <p>
+                    Para correr en tu computador local la app, ejecuta el siguiente comando:
+                    <pre>(venv)&gt;&gt; flask run</pre>
+                    Como resultado te debería aparecer un gran Hola mundo!
+                </p>
+            </article>
+            
+            <article>
+                <h2>Despliegue de mi app en Heroku</h2>
+                <p>Ya creada la app con lo anterior, para realizar el despliegue en Heroku, se debe realizar cada uno de los pasos que se encuentran en el artículo Primeros pasos Heroku. Una vez se aplica el comando
+                <pre>&gt;&gt; git push heroku main</pre>
+                En la misma terminal de comandos Heroku te entrega una dirección de internet donde se encontrará tu app desplegada y ¡podrás acceder a ella desde cualquier otro computador con internet!
+                </p>
+            </article>
+        </main>
+    </body>
 </html>
